@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+          <div class="info">
+                <h1 class="yes1">DO YOU WANT TO PLAY GAME ? </h1>
+                <h1 class="yes"> THEN CLICK THE BUTTON "YES"</h1>
+          </div>
+          <button id="btn1" class="btn1">YES</button>
+          <button id="btn2" class="btn2">NO</button>
+          <div class="bu">
+            <div class="b3">
+              <button id="btn3" class="btn3">CLICK ME</button>
+            </div>
+            <div class="b14">
+              <button id="btn14" class="btn14">CLICK ME </button>
+            </div>
+            <div class="b4">
+              <button id="btn4" class="btn4">CLICK ME</button>
+            </div>
+            <div class="b5">
+              <button id="btn5" class="btn5">CLICK ME</button>
+            </div>
+            <div class="b6">
+              <button id="btn6" class="btn6">CLICK ME</button>
+            </div>
+            <div class="b7">
+              <button id="btn7" class="btn7">CLICK ME</button>
+            </div>
+            <div class="b8">
+                <button id="btn8" class="btn8">CLICK ME</button>
+            </div>
+            <div class="b9">
+              <button id="btn9" class="btn9">CLICK ME</button>
+            </div>
+            <div class="b10">
+              <button id="btn10" class="btn10">CLICK ME</button>
+            </div>
+            <div class="b11">
+              <button id="btn11" class="btn11">CLICK ME</button>
+            </div>
+            <div class="b12">
+              <button id="btn12" class="btn12">CLICK ME</button>
+            </div>
+            <div class="b13">
+              <button id="btn13" class="btn13">CLICK ME</button>
+            </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      let num = 1;
+      let c=1,k=0,n=0,m=0,p=0,q=0;
+      const bu1 = document.querySelector('.bu');
+      const bn1  = document.querySelector('#btn1');
+      const bn2  = document.querySelector('#btn2');
+      const yes  = document.querySelector('.yes1');
+      const no   = document.querySelector('.yes');
+      const bn3  = document.querySelector('#btn3');
+      const bn4  = document.querySelector('#btn4');
+      const bn5  = document.querySelector('#btn5');
+      const bn6  = document.querySelector('#btn6');
+      const bn7  = document.querySelector('#btn7');
+      const bn8  = document.querySelector('#btn8');
+      const bn9  = document.querySelector('#btn9');
+      const bn10 = document.querySelector('#btn10');
+      const bn11 = document.querySelector('#btn11');
+      const bn12 = document.querySelector('#btn12');
+      const bn13 = document.querySelector('#btn13');
+      const bn14 = document.querySelector('#btn14');
+
+
+      const bnn3  = document.querySelector('.b3');
+      const bnn4  = document.querySelector('.b4');
+      const bnn5  = document.querySelector('.b5');
+      const bnn6  = document.querySelector('.b6');
+      const bnn7  = document.querySelector('.b7');
+      const bnn8  = document.querySelector('.b8');
+      const bnn9  = document.querySelector('.b9');
+      const bnn10 = document.querySelector('.b10');
+      const bnn11 = document.querySelector('.b11');
+      const bnn12 = document.querySelector('.b12');
+      const bnn13 = document.querySelector('.b13');
+      const bnn14 = document.querySelector('.b14');
+
+
+
+    const  no1 = () =>{
+            yes.innerHTML = "OKAY VRO BYE";
+            no.innerHTML = "YOU ARE OUT FROM THE GAME";
+            bn1.style.visibility = "hidden";
+            bn2.style.visibility = "hidden";
+
+      }
+
+    const  yes1 = () =>{
+
+        yes.innerHTML = "FIND OUT THE CORRECT BUTTON BY CLICKING MINIMUM NUMBER OF BUTTONS";
+        no.innerHTML  = "TO WIN THIS GAME FIND OUT WITHIN 5 CLICKS";
+        bu1.style.visibility = "visible";
+        bn1.style.visibility = "hidden";
+        bn2.style.visibility = "hidden";
+        bn3.style.visibility = "visible";
+        bn4.style.visibility = "visible";
+        bn5.style.visibility = "visible";
+        bn6.style.visibility = "visible";
+        bn7.style.visibility = "visible";
+        bn8.style.visibility = "visible";
+        bn9.style.visibility = "visible";
+        bn10.style.visibility = "visible";
+        bn11.style.visibility = "visible";
+        bn12.style.visibility = "visible";
+        bn13.style.visibility = "visible";
+        bn14.style.visibility = "visible";
+      }
+
+      bn1.addEventListener('click',yes1);
+      bn2.addEventListener('click',no1);
+
+      const c1 = () =>{
+
+            yes.innerHTML = "WRONG CHOICE"
+            no.innerHTML  = num;
+            num++;
+            if(c%2==0)
+            {
+              bnn3.style.marginLeft = "0%";
+              bnn5.style.marginLeft = "56%";
+            }
+            else {
+              bnn3.style.marginLeft = "56%";
+              bnn5.style.marginLeft = "0%";
+
+            }
+            c++;
+
+      }
+      const c2 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn4.style.marginTop = "15%";
+          bnn7.style.marginTop = "0%";
+        }
+        else {
+          bnn4.style.marginTop = "15%";
+          bnn7.style.marginTop = "0%";
+
+        }
+        c++;
+      }
+      const c3 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn3.style.marginLeft = "0%";
+          bnn5.style.marginLeft = "56%";
+        }
+        else {
+          bnn3.style.marginLeft = "56%";
+          bnn5.style.marginLeft = "0%";
+
+        }
+        c++;
+      }
+      const c4 = () =>{
+
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn6.style.marginLeft = "0%";
+          bnn8.style.marginLeft = "56%";
+        }
+        else {
+          bnn6.style.marginLeft = "56%";
+          bnn8.style.marginLeft = "0%";
+
+        }
+        c++;
+
+      }
+      const c5 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn7.style.marginTop = "15%";
+          bnn4.style.marginTop = "0%";
+        }
+        else {
+          bnn4.style.marginTop = "15%";
+          bnn7.style.marginTop = "0%";
+
+        }
+        c++;
+      }
+      const c6 = () =>{
+        if(num<=5)
+        {
+          yes.innerHTML = "CONGRAGULATION,YOU WON THE GAME,YOUR NUMBER OF CLICKS ARE"
+          no.innerHTML = num;
+          bn1.style.width = "250px"
+          bn1.innerHTML = "SEE THE MESSAGE";
+          bn1.style.visibility = "hidden";
+          bn3.style.visibility = "hidden";
+          bn4.style.visibility = "hidden";
+          bn5.style.visibility = "hidden";
+          bn6.style.visibility = "hidden";
+          bn7.style.visibility = "hidden";
+          bn8.style.visibility = "hidden";
+          bn9.style.visibility = "hidden";
+          bn10.style.visibility = "hidden";
+          bn11.style.visibility = "hidden";
+          bn12.style.visibility = "hidden";
+          bn13.style.visibility = "hidden";
+          bn14.style.visibility = "hidden";
+
+        }
+        else{
+          yes.innerHTML = "YOU LOSE THE GAME,YOUR NUMBER OF CLICKS ARE"
+          no.innerHTML = num;
+          bn3.style.visibility = "hidden";
+          bn4.style.visibility = "hidden";
+          bn5.style.visibility = "hidden";
+          bn6.style.visibility = "hidden";
+          bn7.style.visibility = "hidden";
+          bn8.style.visibility = "hidden";
+          bn9.style.visibility = "hidden";
+          bn10.style.visibility = "hidden";
+          bn11.style.visibility = "hidden";
+          bn12.style.visibility = "hidden";
+          bn13.style.visibility = "hidden";
+          bn14.style.visibility = "hidden";
+        }
+
+
+
+      }
+      const c7 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn13.style.marginTop = "45%";
+          bnn9.style.marginTop = "30%";
+        }
+        else {
+          bnn9.style.marginTop = "45%";
+          bnn13.style.marginTop = "30%";
+
+        }
+        c++;
+      }
+      const c8 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn10.style.marginLeft = "0%";
+          bnn11.style.marginLeft = "56%";
+        }
+        else {
+          bnn10.style.marginLeft = "56%";
+          bnn11.style.marginLeft = "0%";
+
+        }
+        c++;
+      }
+      const c9 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn10.style.marginLeft = "0%";
+          bnn11.style.marginLeft = "56%";
+        }
+        else {
+          bnn10.style.marginLeft = "56%";
+          bnn11.style.marginLeft = "0%";
+
+        }
+        c++;
+      }
+      const c10 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn14.style.marginLeft = "0%";
+          bnn12.style.marginLeft = "56%";
+        }
+        else {
+          bnn14.style.marginLeft = "56%";
+          bnn12.style.marginLeft = "0%";
+
+        }
+        c++;
+      }
+      const c11 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn9.style.marginTop = "45%";
+          bnn13.style.marginTop = "30%";
+        }
+        else {
+          bnn13.style.marginTop = "45%";
+          bnn9.style.marginTop = "30%";
+
+        }
+        c++;
+      }
+      const c12 = () =>{
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
+        {
+          bnn14.style.marginLeft = "0%";
+          bnn12.style.marginLeft = "56%";
+        }
+        else {
+          bnn14.style.marginLeft = "56%";
+          bnn12.style.marginLeft = "0%";
+
+        }
+        c++;
+      }
+
+
+      bn3.addEventListener('click',c1);
+      bn4.addEventListener('click',c2);
+      bn5.addEventListener('click',c3);
+      bn6.addEventListener('click',c4);
+      bn7.addEventListener('click',c5);
+      bn8.addEventListener('click',c6);
+      bn9.addEventListener('click',c7);
+      bn10.addEventListener('click',c8);
+      bn11.addEventListener('click',c9);
+      bn12.addEventListener('click',c10);
+      bn13.addEventListener('click',c11);
+      bn14.addEventListener('click',c12);
+
+
+    </script>
+  </body>
+</html>
