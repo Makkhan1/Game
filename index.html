@@ -136,10 +136,22 @@
             {
               bnn3.style.marginLeft = "0%";
               bnn5.style.marginLeft = "56%";
+              bnn6.style.marginLeft = "0%";
+              bnn8.style.marginLeft = "56%";
+              bnn10.style.marginLeft = "0%";
+              bnn11.style.marginLeft = "56%";
+              bnn14.style.marginLeft = "0%";
+              bnn12.style.marginLeft = "56%";
             }
             else {
               bnn3.style.marginLeft = "56%";
               bnn5.style.marginLeft = "0%";
+              bnn6.style.marginLeft = "56%";
+              bnn8.style.marginLeft = "0%";
+              bnn10.style.marginLeft = "56%";
+              bnn11.style.marginLeft = "0%";
+              bnn14.style.marginLeft = "56%";
+              bnn12.style.marginLeft = "0%";
 
             }
             c++;
@@ -153,6 +165,7 @@
         {
           bnn4.style.marginTop = "15%";
           bnn7.style.marginTop = "0%";
+
         }
         else {
           bnn4.style.marginTop = "15%";
@@ -186,10 +199,22 @@
         {
           bnn6.style.marginLeft = "0%";
           bnn8.style.marginLeft = "56%";
+          bnn3.style.marginLeft = "0%";
+          bnn5.style.marginLeft = "56%";
+          bnn10.style.marginLeft = "0%";
+          bnn11.style.marginLeft = "56%";
+          bnn14.style.marginLeft = "0%";
+          bnn12.style.marginLeft = "56%";
         }
         else {
           bnn6.style.marginLeft = "56%";
           bnn8.style.marginLeft = "0%";
+          bnn3.style.marginLeft = "56%";
+          bnn5.style.marginLeft = "0%";
+          bnn10.style.marginLeft = "56%";
+          bnn11.style.marginLeft = "0%";
+          bnn14.style.marginLeft = "56%";
+          bnn12.style.marginLeft = "0%";
 
         }
         c++;
@@ -212,43 +237,20 @@
         c++;
       }
       const c6 = () =>{
-        if(num<=5)
+        yes.innerHTML = "WRONG CHOICE"
+        no.innerHTML  = num;
+        num++;
+        if(c%2==0)
         {
-          yes.innerHTML = "CONGRAGULATION,YOU WON THE GAME,YOUR NUMBER OF CLICKS ARE"
-          no.innerHTML = num;
-          bn1.style.width = "250px"
-          bn1.innerHTML = "SEE THE MESSAGE";
-          bn1.style.visibility = "hidden";
-          bn3.style.visibility = "hidden";
-          bn4.style.visibility = "hidden";
-          bn5.style.visibility = "hidden";
-          bn6.style.visibility = "hidden";
-          bn7.style.visibility = "hidden";
-          bn8.style.visibility = "hidden";
-          bn9.style.visibility = "hidden";
-          bn10.style.visibility = "hidden";
-          bn11.style.visibility = "hidden";
-          bn12.style.visibility = "hidden";
-          bn13.style.visibility = "hidden";
-          bn14.style.visibility = "hidden";
+          bnn10.style.marginLeft = "0%";
+          bnn11.style.marginLeft = "56%";
+        }
+        else {
+          bnn10.style.marginLeft = "56%";
+          bnn11.style.marginLeft = "0%";
 
         }
-        else{
-          yes.innerHTML = "YOU LOST THE GAME,YOUR NUMBER OF CLICKS ARE"
-          no.innerHTML = num;
-          bn3.style.visibility = "hidden";
-          bn4.style.visibility = "hidden";
-          bn5.style.visibility = "hidden";
-          bn6.style.visibility = "hidden";
-          bn7.style.visibility = "hidden";
-          bn8.style.visibility = "hidden";
-          bn9.style.visibility = "hidden";
-          bn10.style.visibility = "hidden";
-          bn11.style.visibility = "hidden";
-          bn12.style.visibility = "hidden";
-          bn13.style.visibility = "hidden";
-          bn14.style.visibility = "hidden";
-        }
+        c++;
 
 
 
@@ -277,29 +279,65 @@
         {
           bnn10.style.marginLeft = "0%";
           bnn11.style.marginLeft = "56%";
+          bnn3.style.marginLeft = "0%";
+          bnn5.style.marginLeft = "56%";
+          bnn6.style.marginLeft = "0%";
+          bnn8.style.marginLeft = "56%";
+          bnn14.style.marginLeft = "0%";
+          bnn12.style.marginLeft = "56%";
         }
         else {
           bnn10.style.marginLeft = "56%";
           bnn11.style.marginLeft = "0%";
+          bnn3.style.marginLeft = "56%";
+          bnn5.style.marginLeft = "0%";
+          bnn6.style.marginLeft = "56%";
+          bnn8.style.marginLeft = "0%";
+          bnn14.style.marginLeft = "56%";
+          bnn12.style.marginLeft = "0%";
 
         }
         c++;
       }
       const c9 = () =>{
-        yes.innerHTML = "WRONG CHOICE"
-        no.innerHTML  = num;
-        num++;
-        if(c%2==0)
+
+        if(num<=5)
         {
-          bnn10.style.marginLeft = "0%";
-          bnn11.style.marginLeft = "56%";
-        }
-        else {
-          bnn10.style.marginLeft = "56%";
-          bnn11.style.marginLeft = "0%";
+          yes.innerHTML = "CONGRAGULATION,YOU WON THE GAME,YOUR NUMBER OF CLICKS ARE"
+          no.innerHTML = num;
+          bn1.style.width = "250px"
+          bn1.innerHTML = "SEE THE MESSAGE";
+          bn1.style.visibility = "hidden";
+          bn3.style.visibility = "hidden";
+          bn4.style.visibility = "hidden";
+          bn5.style.visibility = "hidden";
+          bn6.style.visibility = "hidden";
+          bn7.style.visibility = "hidden";
+          bn8.style.visibility = "hidden";
+          bn9.style.visibility = "hidden";
+          bn10.style.visibility = "hidden";
+          bn11.style.visibility = "hidden";
+          bn12.style.visibility = "hidden";
+          bn13.style.visibility = "hidden";
+          bn14.style.visibility = "hidden";
 
         }
-        c++;
+        else{
+          yes.innerHTML = "YOU LOSE THE GAME,YOUR NUMBER OF CLICKS ARE"
+          no.innerHTML = num;
+          bn3.style.visibility = "hidden";
+          bn4.style.visibility = "hidden";
+          bn5.style.visibility = "hidden";
+          bn6.style.visibility = "hidden";
+          bn7.style.visibility = "hidden";
+          bn8.style.visibility = "hidden";
+          bn9.style.visibility = "hidden";
+          bn10.style.visibility = "hidden";
+          bn11.style.visibility = "hidden";
+          bn12.style.visibility = "hidden";
+          bn13.style.visibility = "hidden";
+          bn14.style.visibility = "hidden";
+        }
       }
       const c10 = () =>{
         yes.innerHTML = "WRONG CHOICE"
@@ -309,10 +347,22 @@
         {
           bnn14.style.marginLeft = "0%";
           bnn12.style.marginLeft = "56%";
+          bnn3.style.marginLeft = "0%";
+          bnn5.style.marginLeft = "56%";
+          bnn6.style.marginLeft = "0%";
+          bnn8.style.marginLeft = "56%";
+          bnn10.style.marginLeft = "0%";
+          bnn11.style.marginLeft = "56%";
         }
         else {
           bnn14.style.marginLeft = "56%";
           bnn12.style.marginLeft = "0%";
+          bnn3.style.marginLeft = "56%";
+          bnn5.style.marginLeft = "0%";
+          bnn6.style.marginLeft = "56%";
+          bnn8.style.marginLeft = "0%";
+          bnn10.style.marginLeft = "56%";
+          bnn11.style.marginLeft = "0%";
 
         }
         c++;
