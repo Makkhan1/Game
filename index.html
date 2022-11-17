@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/prac17.css">
   </head>
   <body>
+    <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
     <div class="container">
       <div class="main">
+
           <div class="info">
                 <h1 class="yes1">DO YOU WANT TO PLAY GAME ? </h1>
                 <h1 class="yes"> THEN CLICK THE BUTTON "YES"</h1>
           </div>
+          <div id="box"></div>
+          <div id="box1"></div>
+          <div id="box2"></div>
+
           <button id="btn1" class="btn1">YES</button>
           <button id="btn2" class="btn2">NO</button>
           <div class="bu">
@@ -95,13 +103,28 @@
 
 
 
+
     const  no1 = () =>{
             yes.innerHTML = "OKAY VRO BYE";
             no.innerHTML = "YOU ARE OUT FROM THE GAME";
+
+            const video = document.createElement('video');
+video.src ='movie.mp4';
+
+video.autoplay = true;
+video.controls = false;
+video.muted = false;
+video.height = 320;
+video.width = 540;
+
+const box = document.getElementById('box');
+
+box.appendChild(video);
             bn1.style.visibility = "hidden";
             bn2.style.visibility = "hidden";
 
       }
+
 
     const  yes1 = () =>{
 
@@ -306,7 +329,7 @@
           yes.innerHTML = "CONGRAGULATION,YOU WON THE GAME,YOUR NUMBER OF CLICKS ARE"
           no.innerHTML = num;
           bn1.style.width = "250px"
-          bn1.innerHTML = "SEE THE MESSAGE";
+
           bn1.style.visibility = "hidden";
           bn3.style.visibility = "hidden";
           bn4.style.visibility = "hidden";
@@ -320,6 +343,24 @@
           bn12.style.visibility = "hidden";
           bn13.style.visibility = "hidden";
           bn14.style.visibility = "hidden";
+          const video = document.createElement('video');
+video.src ='movie1.mp4';
+
+video.autoplay = true;
+video.controls = false;
+video.muted = false;
+video.height = 320;
+video.width = 540;
+
+const box = document.getElementById('box1');
+
+box.appendChild(video);
+          bn1.style.visibility = "hidden";
+          bn2.style.visibility = "hidden";
+
+
+
+
 
         }
         else{
@@ -337,6 +378,23 @@
           bn12.style.visibility = "hidden";
           bn13.style.visibility = "hidden";
           bn14.style.visibility = "hidden";
+          const video = document.createElement('video');
+        video.src ='movie2.mp4';
+
+        video.autoplay = true;
+        video.controls = false;
+        video.muted = false;
+        video.height = 480;
+        video.width =680;
+
+const box = document.getElementById('box2');
+
+box.appendChild(video);
+          bn1.style.visibility = "hidden";
+          bn2.style.visibility = "hidden";
+
+
+
         }
       }
       const c10 = () =>{
